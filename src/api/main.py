@@ -6,9 +6,8 @@ from typing import List
 
 app = FastAPI()
 
-model = joblib.load('../mode/fraud_model.pkl')
-scaler = joblib.load('../mode/scaler.pkl')
-
+model = joblib.load('fraud_model.pkl')
+scaler = joblib.load('scaler.pkl')
 print("Model and scaler loaded successfully!")
 
 
