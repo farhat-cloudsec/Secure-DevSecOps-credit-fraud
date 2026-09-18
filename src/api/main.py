@@ -8,8 +8,6 @@ app = FastAPI()
 
 model = joblib.load('fraud_model.pkl')
 scaler = joblib.load('scaler.pkl')
-print("Model and scaler loaded successfully!")
-
 
 class Transaction(BaseModel):
     features: List[float]
